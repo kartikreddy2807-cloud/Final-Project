@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Website Template</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+	<title>Just Try It!</title>
 	<link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+	<header class="Title">
+		<div class="Title-Text">Just Try It!</div>
+		<p class="subtitle-text">What is life without a little spontaneity?</p>
+		<p class="subtitle-text">Click the button to get a random micro challenge.</p>
+	</header>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="">
+
+	<main class="Task-Box">
+		<section class="task-card" aria-live="polite">
+			<p id="taskText">Your next micro challenge will appear here.</p>
+		</section>
+		<button id="generateButton" class="generate-button">Generate</button>
+		<button id="savedButton" class="saved-button">Saved</button>
+		<div id="uploadWrapper" class="upload-wrapper hidden">
+			<label for="proofUpload" class="upload-label">Add proof for whenever you complete a task !</label>
+			<input id="proofUpload" type="file" accept="image/*" />
+			<div class="upload-note">Images currently do not save on this site :(</div>
+			<div id="proofPreview" class="proof-preview"></div>
+		</div>
+	</main>
 
 	<script src="./assets/js/main.js"></script>
 </body>
