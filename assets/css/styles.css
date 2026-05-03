@@ -1,5 +1,166 @@
 /* styles.css */
 
 * {
-	font-family: Arial;
+  box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Just Another Hand", cursive, sans-serif;
+  background: #faf7f4;
+  color: #111;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/rm324-element-baifernn-03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.14;
+  z-index: -1;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.Title-Text {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle-text {
+  font-family: "Just Another Hand", cursive;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+.Task-Box {
+  width: min(680px, calc(100vw - 2rem));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.generate-button,
+.saved-button {
+  width: 100%;
+  max-width: 460px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.95rem 1.2rem;
+  background: #fff;
+  color: #111;
+}
+
+.generate-button {
+  background: #fff;
+}
+
+.generate-button:hover,
+.saved-button:hover {
+  opacity: 0.9;
+}
+
+.task-card {
+  width: 100%;
+  max-width: 580px;
+  min-height: 120px;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #111;
+}
+
+.saved-button {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  max-width: 220px;
+  padding: 0.9rem 1.25rem;
+}
+
+.upload-wrapper {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.upload-label {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+#proofUpload {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.proof-preview {
+  min-height: 140px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.proof-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .generate-button,
+  .saved-button {
+    font-size: 1.4rem;
+  }
+
+  .task-card {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+  }
+}
+ 
+
