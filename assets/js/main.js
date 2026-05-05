@@ -1,14 +1,24 @@
 const tasks = [
       "Take a five-minute walk and look for one thing you've never noticed before.",
-        "Write a short thank-you note and send it to someone unexpectedly.",
-          "Try a new flavor combination in a snack or drink.",
-            "Draw or doodle for three minutes without planning the outcome.",
-              "Stand in the sun for a moment and name three things you appreciate.",
-                "Take a photo of a small detail in your day that feels meaningful.",
-                  "Make a quick playlist of songs that match your current mood.",
-                    "Share a silly or kind message with a friend.",
-                      "Create a mini dance move and do it once in your room.",
-                        "Arrange an object on your desk in a new way and notice how it feels."
+      "Write a short thank-you note and send it to someone unexpectedly.",
+      "Try a new flavor combination in a snack or drink.",
+      "Draw or doodle for three minutes without planning the outcome.",
+      "Stand in the sun for a moment, close your eyes and name three things you appreciate.",
+      "Take a photo of a small detail in your day that feels meaningful.",
+      "Make a quick playlist of 5-10 songs that match your current mood.",
+      "Share a silly or kind message with a friend.",
+      "Create a mini dance move and do it once in your room.",
+      "Arrange an object on your desk in a new way and notice how it feels.",
+      "Write down one sentence that describes today so far.", 
+      "Look out a window and follow one moving thing for 30 seconds.", 
+      "Pick a color and find five things around you that match it.", 
+      "Make up a tiny story about the last object you touched.",
+      "Listen to a song and focus on just one instrument the whole time.",
+      "Take a photo from a really low angle.",
+      "Leave a nice note, on a small piece of paper for someone to find later.",
+      
+      
+
                         ];
 
                         const generateButton = document.getElementById('generateButton');
