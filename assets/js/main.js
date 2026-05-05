@@ -1,5 +1,5 @@
 const tasks = [
-      "Take a five-minute walk and look for one thing you’ve never noticed before.",
+      "Take a five-minute walk and look for one thing you've never noticed before.",
         "Write a short thank-you note and send it to someone unexpectedly.",
           "Try a new flavor combination in a snack or drink.",
             "Draw or doodle for three minutes without planning the outcome.",
@@ -71,5 +71,3 @@ const tasks = [
                                                                                   proofUpload.addEventListener('change', handleUpload);
 
                                                                                   updateSavedButton();
-                                                                                  
-]
