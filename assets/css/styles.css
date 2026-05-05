@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Just Another Hand", cursive, sans-serif;
@@ -27,6 +28,31 @@ body::before {
   background-position: center;
   opacity: 0.14;
   z-index: -1;
+}
+
+.nav-header {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+
+.about-link {
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.about-link:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .Title {
@@ -151,6 +177,56 @@ body::before {
   display: none;
 }
 
+/* About Page Styles */
+.about-container {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-text {
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #111;
+  margin: 0;
+}
+
+.back-button {
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
 @media (max-width: 520px) {
   .generate-button,
   .saved-button {
@@ -161,6 +237,20 @@ body::before {
     font-size: 1.1rem;
     padding: 1.2rem;
   }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .nav-header {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .about-link {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
 }
- 
+  
 
